@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/01137f08c2.js" crossorigin="anonymous"></script>
   <style>
     .font-work-sans {
       font-family: "Work Sans", serif;
@@ -26,13 +27,39 @@
     </div>
   </header>
 
-  <main>
+  <main class="container mx-auto my-10">
+    <!-- display ai tools -->
+    <section>
+      <div id="tools-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- all tools are here -->
+      </div>
+    </section>
+    <!-- See more button container -->
+    <section id="see-more-container" class="text-center my-6 hidden">
+      <button onclick="handleSeeMore()" class="btn btn-error">See More</button>
+    </section>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="details_AI" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box w-auto max-w-4xl h-auto">
+        <div id="details_AI_Container" class="flex flex-col-reverse lg:flex-row gap-4">
+
+        </div>
+        <div class="modal-action">
+            <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-error absolute right-2 top-2">✕</button>
+            </form>
+        </div>
+      </div>
+    </dialog>
+
 
   </main>
 
-  <main>
+  <footer>
 
-  </main>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
