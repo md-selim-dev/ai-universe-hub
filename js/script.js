@@ -77,7 +77,7 @@ const displayAIDetails = (toolDetails) => {
   const detailsAIContainer = document.getElementById('details_AI_Container');
 
   detailsAIContainer.innerHTML = `
-    <div id="left-container" class= "bg-red-50 border border-red-200 rounded-xl p-6 w-1/2">
+    <div id="left-container" class= "bg-red-50 border border-red-200 rounded-xl p-6 md:w-1/2">
         <h4 class="text-lg font-bold">${toolDetails.description}</h4>
         <div class="flex gap-2 my-2">
           <div class="grid place-items-center p-2 bg-white rounded-xl text-center text-green-600">
@@ -112,7 +112,7 @@ const displayAIDetails = (toolDetails) => {
         </div>
     </div>
 
-    <div id="right-container" class="border rounded-xl p-6 w-1/2">
+    <div id="right-container" class="border rounded-xl p-6 md:w-1/2">
       <figure class="flex mb-3">
         <img class="rounded-xl" src="${toolDetails.image_link[0]}"/>
       </figure>
